@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>kalkulator</title>
+</head>
+
+<body>
+    <header class="header container">
+        <h1 class="header_title">kalkulator lekcjów</h1>
+    </header>
+    <div class="three_clicks">
+        <button id="teacher_page_button" class="button">nauczyciel</button>
+        <button id="apprentice_page_button" class="button">uczniowie</button>
+        <button id="end_calculation_button" class="button">podsumowanie</button>
+    </div>
+    <div id="teacher_page" class="main_thing container">
+        <form id="form" class="teacher_plan_form" action="">
+            <div id="apprentice_adder_div" class="apprentice_adder_div display_none">
+                <div class="spprentice_adder_div_once">
+                    <h4 class="apprentice_adder_title">podaj imię ucznia:</h4>
+                    <input class="apprentice_adder_input" id="apprentice_name" type="text" value="1">
+                </div>
+                <div class="spprentice_adder_div_once">
+                    <h4 class="apprentice_adder_title">podaj ilość zajęć w tygodniu:</h4>
+                    <input class="apprentice_adder_input" id="apprentice_lessons_number" type="text" value="1">
+                </div>
+                <div class="spprentice_adder_div_once">
+                    <h4 class="apprentice_adder_title">podaj czas trwania zajęć:</h4>
+                    <input class="apprentice_adder_input" id="apprentice_lesson_time" type="text" value="1">
+                </div>
+            </div>
+    </div>
+    <div>
+        <label class="teacher_plan_week_title" for="days">wybierz dzień tygodnia:</label>
+        <select id="selector" class="teacher_plan_week_select" name="days" id="days">
+            <option class="teacher_plan_week_option" value="poniedziałek">poniedziałek</option>
+            <option class="teacher_plan_week_option" value="wtorek">wtorek</option>
+            <option class="teacher_plan_week_option" value="środa">środa</option>
+            <option class="teacher_plan_week_option" value="czwartek">czwartek</option>
+            <option class="teacher_plan_week_option" value="piątek">piątek</option>
+        </select>
+    </div>
+    <div>
+        <h3 id="teacher_time_title">podaj godziny w których możesz uczyć:</h3>
+        <h3 id="apprentice_time_title" class="display_none">podaj godziny w których uczeń może mieć zajęcia</h3>
+        <em>od:</em>
+        <input id="fromH" type="text" value="8">
+        <input id="fromM" type="text" value="15">
+        <em>- do:</em>
+        <input id="toH" type="text" value="16">
+        <input id="toM" type="text" value="30">
+    </div>
+    <input type="submit" id="submit" class="button" value="zapisz">
+    </div class="day_plan container">
+    <h2 class="day_plan_title">plan tygodnia  </h2>
+    <ul id="day_plan_list" class="day_plan_list">
+        <li class="day_plan_day">
+            <em class="day_plan_name">poniedziałek</em>
+            <p class="day_plan_hours">0:00-0:00</p>
+        </li>
+        <li class="day_plan_day">
+            <em class="day_plan_name">wtorek</em>
+            <p class="day_plan_hours">0:00-0:00</p>
+        </li>
+        <li class="day_plan_day">
+            <em class="day_plan_name">środa</em>
+            <p class="day_plan_hours">0:00-0:00</p>
+        </li>
+        <li class="day_plan_day">
+            <em class="day_plan_name">czwartek</em>
+            <p class="day_plan_hours">0:00-0:00</p>
+        </li>
+        <li class="day_plan_day">
+            <em class="day_plan_name">piątek</em>
+            <p class="day_plan_hours">0:00-0:00</p>
+        </li>
+    </ul>
+    
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="functions.js"></script>
+    <script src="calculate.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
